@@ -1,0 +1,12 @@
+# Robots.txt for Krisma Bouw
+# https://www.krisma-bouw.be
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.krisma-bouw.be/sitemap.xml
+
+# Disallow admin/function paths
+Disallow: /.netlify/
+Disallow: /api/
