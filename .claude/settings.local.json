@@ -8,7 +8,9 @@
       "Bash(git remote add:*)",
       "Bash(git push:*)",
       "Bash(python -m http.server:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nVoeg dienstpagina''s, afbeeldingen en verbeteringen toe\n\n- Nieuwe pagina''s: pleisterwerken.html, gyproc.html, renovaties.html\n- Privacyverklaring pagina toegevoegd\n- Alle projectafbeeldingen en logo''s toegevoegd\n- Service cards zijn nu klikbaar naar dienstpagina''s\n- Header: groene top-bar met contactinfo\n- Hero: erkend-aannemer badge met witte achtergrond\n- Footer: logo met witte achtergrond\n- About sectie: carousel met page afbeeldingen\n- Projecten sectie: carousel met alle projectfoto''s\n- Responsive verbeteringen voor mobile\n- Sitemap uitgebreid met nieuwe pagina''s\n- Vite configuratie voor development\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
