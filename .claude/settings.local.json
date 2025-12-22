@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Krisma Bouw moderne website\n\n- Moderne responsive one-page website\n- SEO geoptimaliseerd met Schema.org en GEO tags\n- Contactformulier met reCAPTCHA beveiliging\n- Netlify serverless function voor email verzending\n- Volledige documentatie inclusief deployment handleiding\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(python -m http.server:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

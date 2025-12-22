@@ -26,6 +26,12 @@
 
     <title>Krisma Bouw | Pleisterwerken, Gyproc & Renovaties in Anzegem</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,25 +113,47 @@
     </script>
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-contact">
+                    <a href="tel:+32473788172" class="top-bar-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0473 78 81 72</span>
+                    </a>
+                    <a href="mailto:info@krisma-bouw.be" class="top-bar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@krisma-bouw.be</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#home" class="logo">
-                <span class="logo-text">KRISMA</span>
-                <span class="logo-sub">BOUW</span>
+                <img src="/images/logo-krisma.png" alt="Krisma Bouw" class="logo-img">
             </a>
+            <div class="nav-right">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#diensten" class="nav-link">Diensten</a></li>
+                    <li><a href="#over-ons" class="nav-link">Over Ons</a></li>
+                    <li><a href="#projecten" class="nav-link">Projecten</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary nav-cta">Contacteer Ons</a>
+            </div>
             <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
                 <span class="hamburger"></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#diensten" class="nav-link">Diensten</a></li>
-                <li><a href="#over-ons" class="nav-link">Over Ons</a></li>
-                <li><a href="#projecten" class="nav-link">Projecten</a></li>
-                <li><a href="#contact" class="nav-link cta-button">Contact</a></li>
-            </ul>
         </div>
     </nav>
+
+    <!-- Accent Line -->
+    <div class="accent-line"></div>
 
     <!-- Hero Section -->
     <header class="hero" id="home">
@@ -137,15 +165,8 @@
                 <a href="#contact" class="btn btn-primary">Vraag een Offerte</a>
                 <a href="#diensten" class="btn btn-secondary">Onze Diensten</a>
             </div>
-            <div class="hero-badges">
-                <div class="badge">
-                    <i class="fas fa-certificate"></i>
-                    <span>Erkend Aannemer</span>
-                </div>
-                <div class="badge">
-                    <i class="fas fa-building"></i>
-                    <span>Confederatie Bouw</span>
-                </div>
+            <div class="hero-badge">
+                <img src="/images/erkend-aannemer.jpg" alt="Erkend Aannemer - Lid Confederatie Bouw">
             </div>
         </div>
         <a href="#diensten" class="scroll-indicator">
@@ -162,53 +183,56 @@
             </div>
             <div class="services-grid">
                 <!-- Pleisterwerken -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-roller"></i>
-                    </div>
-                    <h3>Pleisterwerken</h3>
-                    <p>Professionele binnen- en buitenpleisterwerken met oog voor perfecte afwerking. Van traditioneel pleisterwerk tot moderne technieken.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Binnenbepleistering</li>
-                        <li><i class="fas fa-check"></i> Buitenbepleistering</li>
-                        <li><i class="fas fa-check"></i> Sierpleister</li>
-                        <li><i class="fas fa-check"></i> Cementdekvloeren</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Vraag offerte aan <i class="fas fa-arrow-right"></i></a>
-                </article>
+                <a href="/pleisterwerken.html" class="service-card-link">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Pleisterwerken</h3>
+                        <p>Professionele binnen- en buitenpleisterwerken met oog voor perfecte afwerking. Van traditioneel pleisterwerk tot moderne technieken.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Binnenbepleistering</li>
+                            <li><i class="fas fa-check"></i> Buitenbepleistering</li>
+                            <li><i class="fas fa-check"></i> Sierpleister</li>
+                            <li><i class="fas fa-check"></i> Cementdekvloeren</li>
+                        </ul>
+                    </article>
+                </a>
 
                 <!-- Gyproc -->
-                <article class="service-card featured">
-                    <div class="service-badge">Populair</div>
-                    <div class="service-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3>Gyproc</h3>
-                    <p>Complete gyproc-oplossingen voor wanden, plafonds en afwerking. Snelle en propere uitvoering met minimale overlast.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Gyprocwanden</li>
-                        <li><i class="fas fa-check"></i> Verlaagde plafonds</li>
-                        <li><i class="fas fa-check"></i> Isolatie-inbouw</li>
-                        <li><i class="fas fa-check"></i> Brandwerende oplossingen</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Vraag offerte aan <i class="fas fa-arrow-right"></i></a>
-                </article>
+                <a href="/gyproc.html" class="service-card-link">
+                    <article class="service-card featured">
+                        <div class="service-badge">Populair</div>
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Gyproc</h3>
+                        <p>Complete gyproc-oplossingen voor wanden, plafonds en afwerking. Snelle en propere uitvoering met minimale overlast.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Gyprocwanden</li>
+                            <li><i class="fas fa-check"></i> Verlaagde plafonds</li>
+                            <li><i class="fas fa-check"></i> Isolatie-inbouw</li>
+                            <li><i class="fas fa-check"></i> Brandwerende oplossingen</li>
+                        </ul>
+                    </article>
+                </a>
 
                 <!-- Renovaties -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Renovaties</h3>
-                    <p>Kleine tot middelgrote renovatieprojecten vakkundig uitgevoerd. Wij begeleiden u van ontwerp tot realisatie.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Badkamerrenovatie</li>
-                        <li><i class="fas fa-check"></i> Keukenrenovatie</li>
-                        <li><i class="fas fa-check"></i> Zolderinrichting</li>
-                        <li><i class="fas fa-check"></i> Algemene verbouwingen</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Vraag offerte aan <i class="fas fa-arrow-right"></i></a>
-                </article>
+                <a href="/renovaties.html" class="service-card-link">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Renovaties</h3>
+                        <p>Kleine tot middelgrote renovatieprojecten vakkundig uitgevoerd. Wij begeleiden u van ontwerp tot realisatie.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Badkamerrenovatie</li>
+                            <li><i class="fas fa-check"></i> Keukenrenovatie</li>
+                            <li><i class="fas fa-check"></i> Zolderinrichting</li>
+                            <li><i class="fas fa-check"></i> Algemene verbouwingen</li>
+                        </ul>
+                    </article>
+                </a>
             </div>
         </div>
     </section>
@@ -222,21 +246,6 @@
                     <p class="lead">Jong en dynamisch bouwbedrijf met passie voor vakmanschap</p>
                     <p>Krisma Bouw is gespecialiseerd in algemene pleisterwerken, GYPROC en kleine renovaties. Wij hechten veel belang aan detail en vakmanschap, en staan garant voor het naleven van onze afspraken.</p>
                     <p>Of het nu gaat om particulieren of bedrijven, wij leveren steeds werk van de hoogste kwaliteit. Als erkend aannemer en lid van de Confederatie Bouw kunt u rekenen op betrouwbaarheid en professionaliteit.</p>
-
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Projecten voltooid</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Klanttevredenheid</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">30km</span>
-                            <span class="stat-label">Werkgebied</span>
-                        </div>
-                    </div>
 
                     <div class="about-features">
                         <div class="feature">
@@ -263,9 +272,25 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-hard-hat"></i>
-                        <span>Foto teamwerk</span>
+                    <div class="about-carousel" id="aboutCarousel">
+                        <div class="about-carousel-track">
+                            <div class="about-carousel-slide">
+                                <img src="/images/page1.jpg" alt="Krisma Bouw project">
+                            </div>
+                            <div class="about-carousel-slide">
+                                <img src="/images/page2.jpg" alt="Krisma Bouw project">
+                            </div>
+                            <div class="about-carousel-slide">
+                                <img src="/images/page3.jpg" alt="Krisma Bouw project">
+                            </div>
+                        </div>
+                        <button class="about-carousel-btn about-carousel-prev" aria-label="Vorige afbeelding">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="about-carousel-btn about-carousel-next" aria-label="Volgende afbeelding">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="about-carousel-dots"></div>
                     </div>
                 </div>
             </div>
@@ -279,52 +304,62 @@
                 <h2>Recente Projecten</h2>
                 <p>Bekijk een selectie van onze gerealiseerde werken</p>
             </div>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                            <span>Project foto</span>
+
+            <!-- Project Carousel -->
+            <div class="carousel-container">
+                <div class="carousel" id="projectCarousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="/images/pleister1.jpg" alt="Pleisterwerken project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Pleisterwerken</span>
+                            </div>
                         </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Pleisterwerken</span>
+                        <div class="carousel-slide">
+                            <img src="/images/pleister2.jpg" alt="Pleisterwerken project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Pleisterwerken</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/pleister3.jpg" alt="Pleisterwerken project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Pleisterwerken</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/pleister4.jpg" alt="Pleisterwerken project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Pleisterwerken</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/gyproc.jpg" alt="Gyproc project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Gyproc</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/page2.jpg" alt="Renovatie project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Renovatie</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/page3.jpg" alt="Renovatie project">
+                            <div class="carousel-caption">
+                                <span class="project-category">Renovatie</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Binnenbepleistering Woning</h3>
-                        <p>Complete binnenbepleistering van een nieuwbouwwoning in Anzegem.</p>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                            <span>Project foto</span>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Gyproc</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Zolderinrichting</h3>
-                        <p>Volledige gyproc-afwerking met isolatie voor een zolderruimte.</p>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                            <span>Project foto</span>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Renovatie</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Badkamerrenovatie</h3>
-                        <p>Complete renovatie van een badkamer inclusief gyproc en pleisterwerk.</p>
-                    </div>
-                </article>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" id="carouselPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-btn-next" id="carouselNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots" id="carouselDots"></div>
             </div>
         </div>
     </section>
@@ -382,66 +417,37 @@
                                 <p><a href="mailto:info@krisma-bouw.be">info@krisma-bouw.be</a></p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Werkuren</h4>
-                                <p>Ma - Vr: 08:00 - 18:00</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="contact-badges">
-                        <div class="badge-item">
-                            <i class="fas fa-certificate"></i>
-                            <span>Erkend Aannemer</span>
-                        </div>
-                        <div class="badge-item">
-                            <i class="fas fa-building"></i>
-                            <span>Lid Confederatie Bouw</span>
-                        </div>
+                        <img src="/images/erkend-aannemer.jpg" alt="Erkend Aannemer - Lid Confederatie Bouw" class="badge-logo-small">
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper">
                     <form id="contactForm" class="contact-form" action="/api/contact" method="POST">
                         <div class="form-group">
-                            <label for="name">Naam *</label>
-                            <input type="text" id="name" name="name" required placeholder="Uw volledige naam">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">E-mail *</label>
-                                <input type="email" id="email" name="email" required placeholder="uw@email.be">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefoon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="0473/12 34 56">
-                            </div>
+                            <input type="text" id="name" name="name" required placeholder="Naam">
                         </div>
                         <div class="form-group">
-                            <label for="service">Dienst *</label>
-                            <select id="service" name="service" required>
-                                <option value="">Selecteer een dienst</option>
-                                <option value="pleisterwerken">Pleisterwerken</option>
-                                <option value="gyproc">Gyproc</option>
-                                <option value="renovaties">Renovaties</option>
-                                <option value="andere">Andere</option>
-                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="Telefoonnummer">
                         </div>
                         <div class="form-group">
-                            <label for="message">Bericht *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Beschrijf uw project of vraag..."></textarea>
+                            <input type="email" id="email" name="email" required placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" name="address" placeholder="Adres">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" required placeholder="Bericht"></textarea>
                         </div>
                         <div class="form-group captcha-group">
                             <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i> Verstuur Bericht
+                        <p class="form-privacy">Door te versturen gaat u akkoord met onze <a href="/privacyverklaring.html" target="_blank">privacyverklaring</a>.</p>
+                        <button type="submit" class="btn btn-primary">
+                            Verstuur
                         </button>
-                        <p class="form-note">* Verplichte velden. We reageren binnen 24 uur.</p>
                     </form>
                     <div id="formSuccess" class="form-success" style="display: none;">
                         <i class="fas fa-check-circle"></i>
@@ -473,17 +479,16 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <span class="logo-text">KRISMA</span>
-                        <span class="logo-sub">BOUW</span>
+                        <img src="/images/logo-krisma.png" alt="Krisma Bouw" class="logo-img-footer">
                     </div>
                     <p>Uw betrouwbare partner voor pleisterwerken, gyproc en renovaties in Anzegem en omstreken.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Diensten</h4>
                     <ul>
-                        <li><a href="#diensten">Pleisterwerken</a></li>
-                        <li><a href="#diensten">Gyproc</a></li>
-                        <li><a href="#diensten">Renovaties</a></li>
+                        <li><a href="/pleisterwerken.html">Pleisterwerken</a></li>
+                        <li><a href="/gyproc.html">Gyproc</a></li>
+                        <li><a href="/renovaties.html">Renovaties</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -503,7 +508,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Krisma Bouw. Alle rechten voorbehouden.</p>
+                <p>&copy; 2026 Krisma Bouw. Alle rechten voorbehouden. | <a href="/privacyverklaring.html">Privacyverklaring</a></p>
                 <p>Erkend aannemer - Lid Confederatie Bouw</p>
             </div>
         </div>
