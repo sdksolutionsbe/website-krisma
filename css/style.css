@@ -377,6 +377,7 @@ h4 { font-size: 1.125rem; }
 .hamburger::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 24px;
     height: 2px;
     background: var(--color-gray-700);
