@@ -1586,7 +1586,7 @@ h4 { font-size: 1.125rem; }
     }
 
     .footer-logo {
-        align-items: center;
+        display: none;
     }
 
     .footer-contact p {
