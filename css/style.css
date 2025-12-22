@@ -517,7 +517,8 @@ h4 { font-size: 1.125rem; }
 .service-card-link {
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    height: 100%;
 }
 
 .service-card {
@@ -530,6 +531,8 @@ h4 { font-size: 1.125rem; }
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .service-card:hover {
@@ -596,6 +599,31 @@ h4 { font-size: 1.125rem; }
 .service-features i {
     color: var(--color-primary);
     font-size: 0.875rem;
+}
+
+.service-read-more {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-top: auto;
+    padding-top: var(--space-md);
+    transition: gap var(--transition-base);
+}
+
+.service-card-link:hover .service-read-more {
+    gap: var(--space-md);
+}
+
+.service-read-more i {
+    font-size: 0.875rem;
+    transition: transform var(--transition-base);
+}
+
+.service-card-link:hover .service-read-more i {
+    transform: translateX(4px);
 }
 
 /* --------------------------------------------------------------------------
