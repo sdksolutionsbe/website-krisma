@@ -1597,6 +1597,10 @@ h4 { font-size: 1.125rem; }
         gap: var(--space-sm);
         text-align: center;
     }
+
+    .footer-rights {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
